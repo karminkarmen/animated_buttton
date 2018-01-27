@@ -1,0 +1,56 @@
+body {
+  background-color: #3E4149;
+}
+
+.btn {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  border: 2px solid #FF9999;
+  padding: 0 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  color: #FF9999;
+  font-family: Sans-Serif;
+  border-radius: 5px;
+}
+
+.btn.btn-color2 {
+  color: #FFC8C8;
+  border-color: #FFC8C8;
+  background-color: #3E4149;
+}
+
+.btn-cube-hover .btn {
+  display: block;
+}
+
+.btn-cube-hover {
+  display: inline-block;
+  height: 44px;
+  transition: all 250ms ease;
+  transform-style: preserve-3d;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  margin:  0;
+  left: calc(50% - 94px);
+  top: calc(50% - 22px);
+}
+
+.btn-cube-hover:hover {
+  transform: rotateX(80deg);
+}
+
+.btn-cube-hover .default {
+  transform: translateZ(21px);
+}
+
+.btn-cube-hover .hover {
+  transform: rotateX(-90deg) translateZ(-21px);
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
